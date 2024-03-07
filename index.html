@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My page</title>
+<script
+src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#button").click(function() {
+var name = $("#addtext").val();
+var colour = $("#addtext2").val();
+window.alert(
+"My name is " + name +
+" and my favourite colour is " + colour 
+);
+});
+});
+</script>
+</head>
+<body>
+<form>
+What is your name?
+<input type="text" id="addtext"><br><br>
+What is your favourite colour?
+<input type="text" id="addtext2"><br><br>
+<input id="button" name="button" type="button"
+value="click here">
+</form>
+
+<P>
+    Nice to know more about you
+</P>
+<noscript>To optimize the use of this website please activate javascript</noscript>
+</body>
+</html>
